@@ -1,0 +1,52 @@
+@media (min-width: 992px){
+.px-lg-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+    }
+}
+
+@media (min-width: 992px){
+.g-lg-5, .gx-lg-5 {
+    --bs-gutter-x: 3rem;
+    }
+}
+
+@media (min-width: 992px){
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    }
+}
+
+.logos_clientes img{
+    width: 100%;
+}
+
+.hover1 div:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logos_clientes{
+    vertical-align: middle;
+    .mt-5{
+        margin: auto;
+    }
+}

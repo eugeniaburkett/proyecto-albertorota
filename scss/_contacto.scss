@@ -1,0 +1,71 @@
+#contacto .contenedorPrincipal{
+    width: $full-width;
+}
+
+iframe{
+   display: inline-block;
+   float: left;
+   margin-top: 1rem;
+   width: $full-width/2;
+   height: 350px;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media (min-width: 1200px){
+.col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 100%;
+    }
+}
+
+#contactForm {
+    overflow: hidden;
+}
+
+#contactForm.col-xl-6, #contactForm .col-md-6 {
+    position: relative;
+    width: 100%;
+}
+
+.form-group {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid $blue;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+textarea.form-control {
+    height: 9rem;
+}
+
+.botonEnviar {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
