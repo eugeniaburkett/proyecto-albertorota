@@ -1,0 +1,83 @@
+.productos{
+	  display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.productos__titulo<h2{
+   	animation-name: aparecer;
+   	animation-duration: 3s;
+   	animation-delay: 2ms;
+   	animation-timing-function: ease-in-out;
+}
+
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+.productos_fotos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.productos__fotos--individual{
+	width: 33%;
+	display: block;
+	padding: 0;
+	box-sizing: border-box;
+	animation-duration: 2s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.productos__cuadro img:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.boton a{
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.boton a:hover{
+      cursor: pointer;
+      color:$blue;
+      text-decoration: none;
+}
+
