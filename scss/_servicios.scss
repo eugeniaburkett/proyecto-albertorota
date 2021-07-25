@@ -1,8 +1,13 @@
+#servicios {
+  background-color: #fff;
+  color: #000;
+}
+
 .text-primary {
     color: #264cb4 !important;
 }
 
-h2{
+#servicios h2{
 	animation-name: aparecer;
    	animation-duration: 3s;
    	animation-delay: 2ms;
@@ -23,9 +28,14 @@ h2{
 }
 
 i.fas{
-	opacity: 0.5;
-}
-
-i.fas:hover{
 	opacity: 1.0;
 }
+
+i.fa-inverse{
+  opacity: 0.5;
+}
+
+i.fa-inverse:hover{
+	opacity: 1.0;
+}
+

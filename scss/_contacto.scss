@@ -2,6 +2,13 @@
     width: $full-width;
 }
 
+#contacto h2{
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 2ms;
+    animation-timing-function: ease-in-out;
+}
+
 iframe{
    display: inline-block;
    float: left;
@@ -12,7 +19,7 @@ iframe{
 
 .map-responsive {
     overflow:hidden;
-    padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    padding-bottom:400px;
     position:relative;
     height:0;
 }
@@ -23,6 +30,12 @@ iframe{
     height:100%;
     width:100%;
     position:absolute;
+}
+
+@media (min-width: 768px){
+    .map-responsive iframe {
+    padding-right: 1rem;
+    }
 }
 
 @media (min-width: 1200px){
@@ -36,9 +49,11 @@ iframe{
     overflow: hidden;
 }
 
-#contactForm.col-xl-6, #contactForm .col-md-6 {
+#contactForm.col-md-6 {
     position: relative;
     width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .form-group {

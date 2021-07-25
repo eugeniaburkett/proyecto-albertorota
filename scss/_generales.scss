@@ -114,35 +114,38 @@ hr.divider {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 576px;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 992px;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1400px;
+  }
+}
+@media (max-width: 2000px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 2000px;
   }
 }
 
@@ -158,6 +161,20 @@ hr.divider {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    padding: 3rem 3rem 0rem 3rem;
+    padding: 3rem 3rem 3rem 3rem;
     box-sizing: border-box;
-  }
+}
+
+.page-section {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-xl-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
