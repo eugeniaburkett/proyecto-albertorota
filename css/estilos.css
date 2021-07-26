@@ -508,6 +508,82 @@ i.fa-inverse {
 i.fa-inverse:hover {
   opacity: 1.0; }
 
+#productos {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5rem;
+  box-sizing: border-box; }
+
+#productos h2 {
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-delay: 2ms;
+  animation-timing-function: ease-in-out; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem; }
+
+#portfolio a {
+  color: #264cb4;
+  text-decoration: underline; }
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: auto auto 1rem; }
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem; }
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0; }
+  .portfolio-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px); }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 4rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem; }
+  .portfolio-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px); }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem); }
+  .portfolio-item:hover .caption {
+    background-color: #264cb4;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem); } }
+
 #clientes {
   background-color: #fff;
   color: #000; }
@@ -675,62 +751,8 @@ footer a {
   background-color: #264cb4;
   border-color: #264cb4; }
 
-.content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem; }
-
-#portfolio a {
-  color: #264cb4;
-  text-decoration: underline; }
-
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: auto auto 1rem; }
-
-.portfolio-item .caption {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1; }
-
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem; }
-
-@media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
-    margin: 0; }
-  .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px); }
-  .portfolio-item .caption .caption-content {
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem; }
-  .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px); }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem); }
-  .portfolio-item:hover .caption {
-    background-color: #264cb4;
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem); } }
+#navbar {
+  background-color: #000; }
 
 .header__logo:hover {
   transform: scale(1.1); }
@@ -765,3 +787,14 @@ footer a {
   width: 100%;
   padding-right: 0px;
   padding-left: 0px; }
+
+#productos-individual img {
+  margin-bottom: 0rem; }
+
+.cuadro_producto .col-lg-6 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.cuadro-foto {
+  display: flex;
+  justify-content: center; }
