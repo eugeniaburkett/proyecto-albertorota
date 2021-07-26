@@ -1,0 +1,62 @@
+#navbar{
+    background-color: #000;
+}
+
+.header__logo:hover{
+    transform: scale(1.1);
+}
+
+.header__logo {
+    margin-left: 0px;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar a:hover {
+    color: $blue;
+}
+
+#productos-individual h4{
+	font-weight: 600;
+}
+
+@media (min-width: 992px){
+.projects-section .project-text {
+    padding: 5rem;
+	}
+}
+
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px){
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+	}
+}
+
+.foto-producto .col-lg-6{
+	position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#productos-individual img {
+    margin-bottom: 0rem;
+}
+
+.cuadro_producto .col-lg-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.cuadro-foto{
+    display: flex;
+    justify-content: center;
+}
